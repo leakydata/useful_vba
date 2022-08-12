@@ -1,0 +1,8 @@
+' Autofits rows and columns
+Sub AutoFitUsedRange()
+    Dim Sht As Worksheet
+    For Each Sht In ThisWorkbook.Worksheets
+        Sht.UsedRange.Columns.AutoFit
+        Sht.UsedRange.Rows.AutoFit
+    Next Sht
+End Sub
