@@ -6,3 +6,22 @@ Sub AutoFitUsedRange()
         Sht.UsedRange.Rows.AutoFit
     Next Sht
 End Sub
+
+'Removes all fill colors in a selected range
+Sub RemoveAllFillColors()
+'PURPOSE: Remove any Fill Colors from Selected Cell Range
+'SOURCE: www.TheSpreadsheetGuru.com/the-code-vault
+
+'Optimize Code
+  Application.ScreenUpdating = False
+
+'Ensure Cell Range Is Selected
+  If TypeName(Selection) <> "Range" Then
+    MsgBox "Please select some cells before running"
+    Exit Sub
+  End If
+
+'Remove Any Fill Colors From Selected Cells
+  Selection.Interior.Color = xlNone
+      
+End Sub
