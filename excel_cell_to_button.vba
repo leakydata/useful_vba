@@ -7,7 +7,7 @@ Private Sub Worksheet_SelectionChange(ByVal Target As Excel.Range)
     
     Application.ScreenUpdating = False
     
-    filepath = "X:\Deposits\AR Collections\02-10-2023OPTION1\"
+    filepath = "C:\files\"
 
     Debug.Print Target.Address
     Debug.Print Target.Value
