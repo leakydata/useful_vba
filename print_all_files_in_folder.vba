@@ -7,7 +7,7 @@ Private Sub PrintDocsInFolder()
     objWord.Visible = False
     
     ' Save the original printer, otherwise you will reset the system default!
-    objWord.ActivePrinter = "\\SPT-FPS\KONICA MINOLTA C654e"
+        objWord.ActivePrinter = "\\NETWROK ADDRESS OF PRINTER"
     Debug.Print "CURRENT ACTIVE PRINTER:" & objWord.ActivePrinter
     
     
@@ -15,7 +15,7 @@ Private Sub PrintDocsInFolder()
     Dim Path As String
     Dim FName As String
     
-    Path = "X:\Deposits\AR Collections\TEST\"
+        Path = "C:\filepath\"
     FName = Dir(Path & "*.docx")
     Do While FName <> ""
         Debug.Print Path & FName
